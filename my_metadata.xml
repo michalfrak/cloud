@@ -1,0 +1,28 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" validUntil="2023-12-09T21:26:18Z" cacheDuration="PT604800S" entityID="https://localhost:7000/metadata/">
+<script/>
+<md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:KeyDescriptor use="signing">
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:X509Data>
+<ds:X509Certificate>MIID5TCCAs2gAwIBAgIUBjuoxhrQlxT+2F52AWs2TQD8YZYwDQYJKoZIhvcNAQELBQAwgYExCzAJBgNVBAYTAlBMMQswCQYDVQQIDAJOWTELMAkGA1UEBwwCTlkxETAPBgNVBAoMCEJ1aWxkZmF4MREwDwYDVQQLDAhCdWlsZGZheDERMA8GA1UEAwwIQnVpbGRmYXgxHzAdBgkqhkiG9w0BCQEWEHRlc3RAZXhhbXBsZS5jb20wHhcNMjMxMjA3MTM1MDMxWhcNMzMxMjA2MTM1MDMxWjCBgTELMAkGA1UEBhMCUEwxCzAJBgNVBAgMAk5ZMQswCQYDVQQHDAJOWTERMA8GA1UECgwIQnVpbGRmYXgxETAPBgNVBAsMCEJ1aWxkZmF4MREwDwYDVQQDDAhCdWlsZGZheDEfMB0GCSqGSIb3DQEJARYQdGVzdEBleGFtcGxlLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL1yY52Hdu98DscH0mS4vD/Ijk+mPEc2tir1W7V/qveKlnLkzF95q8WPM7vsX4ZVTvrPg/ViFuFdtjZrgPuLjqq+B+R74tF7ILMR5SRPN1/fyoJF5Ly1sdboRFWxfBsnpAJuddWGMMaBfwuPws9edVtgDIUM+91cavCbmGCZT37/L/4qG7kOGeEfmRzJfg8EV8VFLq7FVaVYOmC17aoFDGdP2LQCTZytrTR2UWSdl/ojrNFfnWAnLaum1mXzbd7TkaCOk2+6CinmlTeVTt7CMXs18hPWTjvW31maemB+TOtO5BszrTDDaWOxBX4Eb+70eRcP7MsarOVjFknkl4RnzsMCAwEAAaNTMFEwHQYDVR0OBBYEFCrkdW/9N+VEGzUjwc8lHHFwORMyMB8GA1UdIwQYMBaAFCrkdW/9N+VEGzUjwc8lHHFwORMyMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAJEnm2FGhLYEHJlw/btx/FtpM8dpnnd0uGugiGgdCLtiQwxGpmYkwPGw/eHOkJULpxsYRRcxjLW3/JQ6w7SGmPdILlJLlGpa3Um5bWd53liUcaEyWl4fU0u8PQYiEctpNKp3IPFiXdOqVvDHtehAaQ8zL5+qMkv+938B1MODVSn9D4LgQlCTQKyaTYp6ZsREvv4iiN/Xa3LIcNVovkAdwD50P6jOCEO58W7lVYlUZL2y61ymsQcoT5Aenyqgze20Uq6bvIVaC8Szqzyrk/e62GNEMbcxF+EYhQYOWMysDZa3TdlW0QNWQM5nyOBDKARPWJHWvrDsEu8Xc13EeFev3k8=</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</md:KeyDescriptor>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://localhost:7000/?sls"/>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://localhost:7000/?acs" index="1"/>
+</md:SPSSODescriptor>
+<md:Organization>
+<md:OrganizationName xml:lang="en-US">sp_test</md:OrganizationName>
+<md:OrganizationDisplayName xml:lang="en-US">SP test</md:OrganizationDisplayName>
+<md:OrganizationURL xml:lang="en-US">http://sp.example.com</md:OrganizationURL>
+</md:Organization>
+<md:ContactPerson contactType="technical">
+<md:GivenName>technical_name</md:GivenName>
+<md:EmailAddress>technical@example.com</md:EmailAddress>
+</md:ContactPerson>
+<md:ContactPerson contactType="support">
+<md:GivenName>support_name</md:GivenName>
+<md:EmailAddress>support@example.com</md:EmailAddress>
+</md:ContactPerson>
+</md:EntityDescriptor>
