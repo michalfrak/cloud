@@ -9,6 +9,7 @@ python = "^3.9"
 boto3 = "^1.24.36"
 cryptography = "^37.0.4"
 pytest = "^7.1.2"
+isort = "6.0.1"
 
 [tool.poetry.dev-dependencies]
 
